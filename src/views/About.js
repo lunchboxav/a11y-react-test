@@ -1,7 +1,12 @@
 import React from "react";
+import ContentContainer from "../components/ContentContainer";
 
 function About() {
-  return <h1>About</h1>
+    return (
+      <ContentContainer>
+        <h1>About</h1>
+      </ContentContainer>
+    );
 }
 
 export default About

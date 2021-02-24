@@ -1,10 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { styled } from "../stitches.config";
+import List from "./List";
+
+const SideNav = styled("div", {
+  backgroundColor: "gainsboro",
+  fontSize: "13px",
+  lineHeight: "1",
+  fontWeight: 500,
+  paddingLeft: "16px",
+  paddingRight: "16px",
+  border: "0",
+  height: "100vh",
+  width: "96px"
+});
 
 function Nav() {
   return (
-    <nav>
-      <ul>
+    <SideNav>
+      <List>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -14,8 +28,8 @@ function Nav() {
         <li>
           <Link to="/notes">Notes</Link>
         </li>
-      </ul>
-    </nav>
+      </List>
+    </SideNav>
   );
 }
 

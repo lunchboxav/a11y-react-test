@@ -4,11 +4,12 @@ import Home from "./views/Home";
 import About from "./views/About";
 import Notes from "./views/Notes";
 import Nav from "./components/Nav";
+import FlexContainer from "./components/FlexContainer";
 
 export default function App() {
   return (
     <Router>
-      <div>
+      <FlexContainer>
         <Nav />
         <div>
           <Switch>
@@ -23,7 +24,7 @@ export default function App() {
             </Route>
           </Switch>
         </div>
-      </div>
+      </FlexContainer>
     </Router>
   );
 }

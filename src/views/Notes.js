@@ -1,7 +1,12 @@
 import React from "react";
+import ContentContainer from "../components/ContentContainer";
 
 function Notes() {
-  return <h1>Notes</h1>
+  return (
+    <ContentContainer>
+      <h1>Notes</h1>
+    </ContentContainer>
+  );
 }
 
-export default Notes
+export default Notes;
