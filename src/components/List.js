@@ -2,7 +2,8 @@ import { styled } from "../stitches.config";
 
 const List = styled("ul", {
   marginTop: "28px",
-  paddingLeft: "24px",
+  marginRight: "16px",
+  paddingLeft: "16px",
   listStyle: "none"
 });
 
